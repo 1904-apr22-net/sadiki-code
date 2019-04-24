@@ -186,11 +186,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\yarrunmace\\Desktop\\Prework_SZS\\Revature\\Animals\\Animals.Library\\Animals.Library.csproj",
+      "projectUniqueName": "C:\\Users\\yarrunmace\\Desktop\\Prework_SZS\\Revature\\sadiki-code\\Animals\\Animals.Library\\Animals.Library.csproj",
       "projectName": "Animals.Library",
-      "projectPath": "C:\\Users\\yarrunmace\\Desktop\\Prework_SZS\\Revature\\Animals\\Animals.Library\\Animals.Library.csproj",
+      "projectPath": "C:\\Users\\yarrunmace\\Desktop\\Prework_SZS\\Revature\\sadiki-code\\Animals\\Animals.Library\\Animals.Library.csproj",
       "packagesPath": "C:\\Users\\yarrunmace\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\yarrunmace\\Desktop\\Prework_SZS\\Revature\\Animals\\Animals.Library\\obj\\",
+      "outputPath": "C:\\Users\\yarrunmace\\Desktop\\Prework_SZS\\Revature\\sadiki-code\\Animals\\Animals.Library\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\ProgramData\\Xamarin\\NuGet\\",
