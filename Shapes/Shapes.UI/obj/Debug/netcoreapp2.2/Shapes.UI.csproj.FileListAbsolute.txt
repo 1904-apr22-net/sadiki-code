@@ -1,0 +1,14 @@
+C:\Users\yarrunmace\Desktop\Prework_SZS\Revature\Shapes\Shapes.UI\bin\Debug\netcoreapp2.2\Shapes.UI.deps.json
+C:\Users\yarrunmace\Desktop\Prework_SZS\Revature\Shapes\Shapes.UI\bin\Debug\netcoreapp2.2\Shapes.UI.runtimeconfig.json
+C:\Users\yarrunmace\Desktop\Prework_SZS\Revature\Shapes\Shapes.UI\bin\Debug\netcoreapp2.2\Shapes.UI.runtimeconfig.dev.json
+C:\Users\yarrunmace\Desktop\Prework_SZS\Revature\Shapes\Shapes.UI\bin\Debug\netcoreapp2.2\Shapes.UI.dll
+C:\Users\yarrunmace\Desktop\Prework_SZS\Revature\Shapes\Shapes.UI\bin\Debug\netcoreapp2.2\Shapes.UI.pdb
+C:\Users\yarrunmace\Desktop\Prework_SZS\Revature\Shapes\Shapes.UI\bin\Debug\netcoreapp2.2\Shapes.Library.dll
+C:\Users\yarrunmace\Desktop\Prework_SZS\Revature\Shapes\Shapes.UI\bin\Debug\netcoreapp2.2\Shapes.Library.pdb
+C:\Users\yarrunmace\Desktop\Prework_SZS\Revature\Shapes\Shapes.UI\obj\Debug\netcoreapp2.2\Shapes.UI.csprojAssemblyReference.cache
+C:\Users\yarrunmace\Desktop\Prework_SZS\Revature\Shapes\Shapes.UI\obj\Debug\netcoreapp2.2\Shapes.UI.csproj.CoreCompileInputs.cache
+C:\Users\yarrunmace\Desktop\Prework_SZS\Revature\Shapes\Shapes.UI\obj\Debug\netcoreapp2.2\Shapes.UI.AssemblyInfoInputs.cache
+C:\Users\yarrunmace\Desktop\Prework_SZS\Revature\Shapes\Shapes.UI\obj\Debug\netcoreapp2.2\Shapes.UI.AssemblyInfo.cs
+C:\Users\yarrunmace\Desktop\Prework_SZS\Revature\Shapes\Shapes.UI\obj\Debug\netcoreapp2.2\Shapes.UI.csproj.CopyComplete
+C:\Users\yarrunmace\Desktop\Prework_SZS\Revature\Shapes\Shapes.UI\obj\Debug\netcoreapp2.2\Shapes.UI.dll
+C:\Users\yarrunmace\Desktop\Prework_SZS\Revature\Shapes\Shapes.UI\obj\Debug\netcoreapp2.2\Shapes.UI.pdb

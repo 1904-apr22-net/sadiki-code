@@ -1,0 +1,9 @@
+C:\Users\yarrunmace\Desktop\Prework_SZS\Revature\Animals\Animals.Library\bin\Debug\netstandard2.0\Animals.Library.deps.json
+C:\Users\yarrunmace\Desktop\Prework_SZS\Revature\Animals\Animals.Library\bin\Debug\netstandard2.0\Animals.Library.dll
+C:\Users\yarrunmace\Desktop\Prework_SZS\Revature\Animals\Animals.Library\bin\Debug\netstandard2.0\Animals.Library.pdb
+C:\Users\yarrunmace\Desktop\Prework_SZS\Revature\Animals\Animals.Library\obj\Debug\netstandard2.0\Animals.Library.csprojAssemblyReference.cache
+C:\Users\yarrunmace\Desktop\Prework_SZS\Revature\Animals\Animals.Library\obj\Debug\netstandard2.0\Animals.Library.csproj.CoreCompileInputs.cache
+C:\Users\yarrunmace\Desktop\Prework_SZS\Revature\Animals\Animals.Library\obj\Debug\netstandard2.0\Animals.Library.AssemblyInfoInputs.cache
+C:\Users\yarrunmace\Desktop\Prework_SZS\Revature\Animals\Animals.Library\obj\Debug\netstandard2.0\Animals.Library.AssemblyInfo.cs
+C:\Users\yarrunmace\Desktop\Prework_SZS\Revature\Animals\Animals.Library\obj\Debug\netstandard2.0\Animals.Library.dll
+C:\Users\yarrunmace\Desktop\Prework_SZS\Revature\Animals\Animals.Library\obj\Debug\netstandard2.0\Animals.Library.pdb

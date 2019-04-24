@@ -1,0 +1,14 @@
+C:\Users\yarrunmace\Desktop\Prework_SZS\Revature\Calculator\Calculator.UI\bin\Debug\netcoreapp2.2\Calculator.UI.deps.json
+C:\Users\yarrunmace\Desktop\Prework_SZS\Revature\Calculator\Calculator.UI\bin\Debug\netcoreapp2.2\Calculator.UI.runtimeconfig.json
+C:\Users\yarrunmace\Desktop\Prework_SZS\Revature\Calculator\Calculator.UI\bin\Debug\netcoreapp2.2\Calculator.UI.runtimeconfig.dev.json
+C:\Users\yarrunmace\Desktop\Prework_SZS\Revature\Calculator\Calculator.UI\bin\Debug\netcoreapp2.2\Calculator.UI.dll
+C:\Users\yarrunmace\Desktop\Prework_SZS\Revature\Calculator\Calculator.UI\bin\Debug\netcoreapp2.2\Calculator.UI.pdb
+C:\Users\yarrunmace\Desktop\Prework_SZS\Revature\Calculator\Calculator.UI\bin\Debug\netcoreapp2.2\Calculator.Library.dll
+C:\Users\yarrunmace\Desktop\Prework_SZS\Revature\Calculator\Calculator.UI\bin\Debug\netcoreapp2.2\Calculator.Library.pdb
+C:\Users\yarrunmace\Desktop\Prework_SZS\Revature\Calculator\Calculator.UI\obj\Debug\netcoreapp2.2\Calculator.UI.csprojAssemblyReference.cache
+C:\Users\yarrunmace\Desktop\Prework_SZS\Revature\Calculator\Calculator.UI\obj\Debug\netcoreapp2.2\Calculator.UI.csproj.CoreCompileInputs.cache
+C:\Users\yarrunmace\Desktop\Prework_SZS\Revature\Calculator\Calculator.UI\obj\Debug\netcoreapp2.2\Calculator.UI.AssemblyInfoInputs.cache
+C:\Users\yarrunmace\Desktop\Prework_SZS\Revature\Calculator\Calculator.UI\obj\Debug\netcoreapp2.2\Calculator.UI.AssemblyInfo.cs
+C:\Users\yarrunmace\Desktop\Prework_SZS\Revature\Calculator\Calculator.UI\obj\Debug\netcoreapp2.2\Calculator.UI.csproj.CopyComplete
+C:\Users\yarrunmace\Desktop\Prework_SZS\Revature\Calculator\Calculator.UI\obj\Debug\netcoreapp2.2\Calculator.UI.dll
+C:\Users\yarrunmace\Desktop\Prework_SZS\Revature\Calculator\Calculator.UI\obj\Debug\netcoreapp2.2\Calculator.UI.pdb

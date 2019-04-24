@@ -1,0 +1,9 @@
+C:\Users\yarrunmace\Desktop\Prework_SZS\Revature\Shapes\Shapes.Library\bin\Debug\netstandard2.0\Shapes.Library.deps.json
+C:\Users\yarrunmace\Desktop\Prework_SZS\Revature\Shapes\Shapes.Library\bin\Debug\netstandard2.0\Shapes.Library.dll
+C:\Users\yarrunmace\Desktop\Prework_SZS\Revature\Shapes\Shapes.Library\bin\Debug\netstandard2.0\Shapes.Library.pdb
+C:\Users\yarrunmace\Desktop\Prework_SZS\Revature\Shapes\Shapes.Library\obj\Debug\netstandard2.0\Shapes.Library.csprojAssemblyReference.cache
+C:\Users\yarrunmace\Desktop\Prework_SZS\Revature\Shapes\Shapes.Library\obj\Debug\netstandard2.0\Shapes.Library.csproj.CoreCompileInputs.cache
+C:\Users\yarrunmace\Desktop\Prework_SZS\Revature\Shapes\Shapes.Library\obj\Debug\netstandard2.0\Shapes.Library.AssemblyInfoInputs.cache
+C:\Users\yarrunmace\Desktop\Prework_SZS\Revature\Shapes\Shapes.Library\obj\Debug\netstandard2.0\Shapes.Library.AssemblyInfo.cs
+C:\Users\yarrunmace\Desktop\Prework_SZS\Revature\Shapes\Shapes.Library\obj\Debug\netstandard2.0\Shapes.Library.dll
+C:\Users\yarrunmace\Desktop\Prework_SZS\Revature\Shapes\Shapes.Library\obj\Debug\netstandard2.0\Shapes.Library.pdb

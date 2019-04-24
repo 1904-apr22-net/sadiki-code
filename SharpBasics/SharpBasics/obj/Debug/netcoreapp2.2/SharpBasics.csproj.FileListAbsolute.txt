@@ -1,0 +1,11 @@
+C:\Users\yarrunmace\Desktop\Prework_SZS\Revature\SharpBasics\SharpBasics\bin\Debug\netcoreapp2.2\SharpBasics.deps.json
+C:\Users\yarrunmace\Desktop\Prework_SZS\Revature\SharpBasics\SharpBasics\bin\Debug\netcoreapp2.2\SharpBasics.runtimeconfig.json
+C:\Users\yarrunmace\Desktop\Prework_SZS\Revature\SharpBasics\SharpBasics\bin\Debug\netcoreapp2.2\SharpBasics.runtimeconfig.dev.json
+C:\Users\yarrunmace\Desktop\Prework_SZS\Revature\SharpBasics\SharpBasics\bin\Debug\netcoreapp2.2\SharpBasics.dll
+C:\Users\yarrunmace\Desktop\Prework_SZS\Revature\SharpBasics\SharpBasics\bin\Debug\netcoreapp2.2\SharpBasics.pdb
+C:\Users\yarrunmace\Desktop\Prework_SZS\Revature\SharpBasics\SharpBasics\obj\Debug\netcoreapp2.2\SharpBasics.csprojAssemblyReference.cache
+C:\Users\yarrunmace\Desktop\Prework_SZS\Revature\SharpBasics\SharpBasics\obj\Debug\netcoreapp2.2\SharpBasics.csproj.CoreCompileInputs.cache
+C:\Users\yarrunmace\Desktop\Prework_SZS\Revature\SharpBasics\SharpBasics\obj\Debug\netcoreapp2.2\SharpBasics.AssemblyInfoInputs.cache
+C:\Users\yarrunmace\Desktop\Prework_SZS\Revature\SharpBasics\SharpBasics\obj\Debug\netcoreapp2.2\SharpBasics.AssemblyInfo.cs
+C:\Users\yarrunmace\Desktop\Prework_SZS\Revature\SharpBasics\SharpBasics\obj\Debug\netcoreapp2.2\SharpBasics.dll
+C:\Users\yarrunmace\Desktop\Prework_SZS\Revature\SharpBasics\SharpBasics\obj\Debug\netcoreapp2.2\SharpBasics.pdb
