@@ -1,0 +1,9 @@
+C:\Users\Eid\source\repos\sadiki-code\Assessment1.UI\Assessment1.Library\bin\Debug\netstandard2.0\Assessment1.Library.deps.json
+C:\Users\Eid\source\repos\sadiki-code\Assessment1.UI\Assessment1.Library\bin\Debug\netstandard2.0\Assessment1.Library.dll
+C:\Users\Eid\source\repos\sadiki-code\Assessment1.UI\Assessment1.Library\bin\Debug\netstandard2.0\Assessment1.Library.pdb
+C:\Users\Eid\source\repos\sadiki-code\Assessment1.UI\Assessment1.Library\obj\Debug\netstandard2.0\Assessment1.Library.csprojAssemblyReference.cache
+C:\Users\Eid\source\repos\sadiki-code\Assessment1.UI\Assessment1.Library\obj\Debug\netstandard2.0\Assessment1.Library.csproj.CoreCompileInputs.cache
+C:\Users\Eid\source\repos\sadiki-code\Assessment1.UI\Assessment1.Library\obj\Debug\netstandard2.0\Assessment1.Library.AssemblyInfoInputs.cache
+C:\Users\Eid\source\repos\sadiki-code\Assessment1.UI\Assessment1.Library\obj\Debug\netstandard2.0\Assessment1.Library.AssemblyInfo.cs
+C:\Users\Eid\source\repos\sadiki-code\Assessment1.UI\Assessment1.Library\obj\Debug\netstandard2.0\Assessment1.Library.dll
+C:\Users\Eid\source\repos\sadiki-code\Assessment1.UI\Assessment1.Library\obj\Debug\netstandard2.0\Assessment1.Library.pdb

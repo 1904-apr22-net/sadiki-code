@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\yarrunmace\\Desktop\\Prework_SZS\\Revature\\Shapes\\Shapes.UI\\Shapes.UI.csproj": {}
+    "C:\\Users\\Eid\\source\\repos\\sadiki-code\\Shapes\\Shapes.UI\\Shapes.UI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\yarrunmace\\Desktop\\Prework_SZS\\Revature\\Shapes\\Shapes.Library\\Shapes.Library.csproj": {
+    "C:\\Users\\Eid\\source\\repos\\sadiki-code\\Shapes\\Shapes.Library\\Shapes.Library.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\yarrunmace\\Desktop\\Prework_SZS\\Revature\\Shapes\\Shapes.Library\\Shapes.Library.csproj",
+        "projectUniqueName": "C:\\Users\\Eid\\source\\repos\\sadiki-code\\Shapes\\Shapes.Library\\Shapes.Library.csproj",
         "projectName": "Shapes.Library",
-        "projectPath": "C:\\Users\\yarrunmace\\Desktop\\Prework_SZS\\Revature\\Shapes\\Shapes.Library\\Shapes.Library.csproj",
-        "packagesPath": "C:\\Users\\yarrunmace\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\yarrunmace\\Desktop\\Prework_SZS\\Revature\\Shapes\\Shapes.Library\\obj\\",
+        "projectPath": "C:\\Users\\Eid\\source\\repos\\sadiki-code\\Shapes\\Shapes.Library\\Shapes.Library.csproj",
+        "packagesPath": "C:\\Users\\Eid\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Eid\\source\\repos\\sadiki-code\\Shapes\\Shapes.Library\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\ProgramData\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\yarrunmace\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Eid\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -58,21 +58,21 @@
         }
       }
     },
-    "C:\\Users\\yarrunmace\\Desktop\\Prework_SZS\\Revature\\Shapes\\Shapes.UI\\Shapes.UI.csproj": {
+    "C:\\Users\\Eid\\source\\repos\\sadiki-code\\Shapes\\Shapes.UI\\Shapes.UI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\yarrunmace\\Desktop\\Prework_SZS\\Revature\\Shapes\\Shapes.UI\\Shapes.UI.csproj",
+        "projectUniqueName": "C:\\Users\\Eid\\source\\repos\\sadiki-code\\Shapes\\Shapes.UI\\Shapes.UI.csproj",
         "projectName": "Shapes.UI",
-        "projectPath": "C:\\Users\\yarrunmace\\Desktop\\Prework_SZS\\Revature\\Shapes\\Shapes.UI\\Shapes.UI.csproj",
-        "packagesPath": "C:\\Users\\yarrunmace\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\yarrunmace\\Desktop\\Prework_SZS\\Revature\\Shapes\\Shapes.UI\\obj\\",
+        "projectPath": "C:\\Users\\Eid\\source\\repos\\sadiki-code\\Shapes\\Shapes.UI\\Shapes.UI.csproj",
+        "packagesPath": "C:\\Users\\Eid\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Eid\\source\\repos\\sadiki-code\\Shapes\\Shapes.UI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\ProgramData\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\yarrunmace\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Eid\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -86,8 +86,8 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "C:\\Users\\yarrunmace\\Desktop\\Prework_SZS\\Revature\\Shapes\\Shapes.Library\\Shapes.Library.csproj": {
-                "projectPath": "C:\\Users\\yarrunmace\\Desktop\\Prework_SZS\\Revature\\Shapes\\Shapes.Library\\Shapes.Library.csproj"
+              "C:\\Users\\Eid\\source\\repos\\sadiki-code\\Shapes\\Shapes.Library\\Shapes.Library.csproj": {
+                "projectPath": "C:\\Users\\Eid\\source\\repos\\sadiki-code\\Shapes\\Shapes.Library\\Shapes.Library.csproj"
               }
             }
           }
@@ -100,14 +100,6 @@
       },
       "frameworks": {
         "netcoreapp2.2": {
-          "dependencies": {
-            "Microsoft.NETCore.App": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.2.0, )",
-              "autoReferenced": true
-            }
-          },
           "imports": [
             "net461"
           ],
