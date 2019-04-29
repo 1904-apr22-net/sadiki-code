@@ -711,11 +711,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Eid\\source\\repos\\sadiki-code\\Assessment1.UI\\Assessment1\\Assessment1.csproj",
+      "projectUniqueName": "C:\\Users\\Eid\\source\\repos\\sadiki-code\\Assessment1\\Assessment1\\Assessment1.csproj",
       "projectName": "Assessment1",
-      "projectPath": "C:\\Users\\Eid\\source\\repos\\sadiki-code\\Assessment1.UI\\Assessment1\\Assessment1.csproj",
+      "projectPath": "C:\\Users\\Eid\\source\\repos\\sadiki-code\\Assessment1\\Assessment1\\Assessment1.csproj",
       "packagesPath": "C:\\Users\\Eid\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Eid\\source\\repos\\sadiki-code\\Assessment1.UI\\Assessment1\\obj\\",
+      "outputPath": "C:\\Users\\Eid\\source\\repos\\sadiki-code\\Assessment1\\Assessment1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\ProgramData\\Xamarin\\NuGet\\",
@@ -736,8 +736,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\Eid\\source\\repos\\sadiki-code\\Assessment1.UI\\Assessment1.Library\\Assessment1.Library.csproj": {
-              "projectPath": "C:\\Users\\Eid\\source\\repos\\sadiki-code\\Assessment1.UI\\Assessment1.Library\\Assessment1.Library.csproj"
+            "C:\\Users\\Eid\\source\\repos\\sadiki-code\\Assessment1\\Assessment1.Library\\Assessment1.Library.csproj": {
+              "projectPath": "C:\\Users\\Eid\\source\\repos\\sadiki-code\\Assessment1\\Assessment1.Library\\Assessment1.Library.csproj"
             }
           }
         }
