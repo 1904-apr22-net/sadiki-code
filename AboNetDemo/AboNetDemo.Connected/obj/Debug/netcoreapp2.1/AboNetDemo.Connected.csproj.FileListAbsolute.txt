@@ -1,8 +1,0 @@
-C:\Users\Eid\source\repos\sadiki-code\AboNetDemo\AboNetDemo.Connected\bin\Debug\netcoreapp2.1\AboNetDemo.Connected.deps.json
-C:\Users\Eid\source\repos\sadiki-code\AboNetDemo\AboNetDemo.Connected\bin\Debug\netcoreapp2.1\AboNetDemo.Connected.runtimeconfig.json
-C:\Users\Eid\source\repos\sadiki-code\AboNetDemo\AboNetDemo.Connected\bin\Debug\netcoreapp2.1\AboNetDemo.Connected.runtimeconfig.dev.json
-C:\Users\Eid\source\repos\sadiki-code\AboNetDemo\AboNetDemo.Connected\bin\Debug\netcoreapp2.1\AboNetDemo.Connected.dll
-C:\Users\Eid\source\repos\sadiki-code\AboNetDemo\AboNetDemo.Connected\obj\Debug\netcoreapp2.1\AboNetDemo.Connected.csprojAssemblyReference.cache
-C:\Users\Eid\source\repos\sadiki-code\AboNetDemo\AboNetDemo.Connected\obj\Debug\netcoreapp2.1\AboNetDemo.Connected.csproj.CoreCompileInputs.cache
-C:\Users\Eid\source\repos\sadiki-code\AboNetDemo\AboNetDemo.Connected\obj\Debug\netcoreapp2.1\AboNetDemo.Connected.AssemblyInfoInputs.cache
-C:\Users\Eid\source\repos\sadiki-code\AboNetDemo\AboNetDemo.Connected\obj\Debug\netcoreapp2.1\AboNetDemo.Connected.AssemblyInfo.cs
