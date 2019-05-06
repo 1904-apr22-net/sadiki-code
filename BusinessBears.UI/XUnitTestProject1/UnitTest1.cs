@@ -1,4 +1,4 @@
-using BusinessBear.Library;
+using BusinessBears.Library;
 using System;
 using System.Collections.Generic;
 using Xunit;
@@ -15,12 +15,10 @@ namespace BusinessBears.Tests
 
             //function
             Training t2 = new Training("Walnut Crushing", 27.99);
-            Console.WriteLine(t2.Name);
-            t2.Quantity = 9;
-            testlocation.AddProduct(t2);
+            testlocation.AddProduct(t2, 9);
 
             //assert
-            Assert.Equal(9, testlocation.Inventory["Walnut Crushing"]);
+            Assert.Equal(9, testlocation.Inventory["Walnut Crushing"].Quantity);
 
         }
     }

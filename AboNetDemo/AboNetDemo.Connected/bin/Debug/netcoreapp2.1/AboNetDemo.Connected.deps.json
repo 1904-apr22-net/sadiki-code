@@ -1,0 +1,41 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.1",
+    "signature": "f143957628bf0fd070c1fbbec5904f10932d4ce4"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.1": {
+      "AboNetDemo.Connected/1.0.0": {
+        "dependencies": {
+          "EntityFramework.SqlServerCompact": "6.2.0"
+        },
+        "runtime": {
+          "AboNetDemo.Connected.dll": {}
+        }
+      },
+      "EntityFramework.SqlServerCompact/6.2.0": {
+        "runtime": {
+          "lib/net45/EntityFramework.SqlServerCompact.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.2.61023.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AboNetDemo.Connected/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "EntityFramework.SqlServerCompact/6.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pGPxxPUCsckMg/UP/EOfklanNCCGIQvJzMBt56UnjwutzlVni7dJL92LFeQR2foI+O2E4NjlCaWWHXxGI7gpQw==",
+      "path": "entityframework.sqlservercompact/6.2.0",
+      "hashPath": "entityframework.sqlservercompact.6.2.0.nupkg.sha512"
+    }
+  }
+}

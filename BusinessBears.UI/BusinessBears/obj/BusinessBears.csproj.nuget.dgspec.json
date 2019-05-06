@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Eid\\source\\repos\\BusinessBears.UI\\BusinessBears\\BusinessBears.csproj": {}
+    "C:\\Users\\Eid\\source\\repos\\sadiki-code\\BusinessBears.UI\\BusinessBears\\BusinessBears.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Eid\\source\\repos\\BusinessBears.UI\\BusinessBears\\BusinessBears.csproj": {
+    "C:\\Users\\Eid\\source\\repos\\sadiki-code\\BusinessBears.UI\\BusinessBears\\BusinessBears.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Eid\\source\\repos\\BusinessBears.UI\\BusinessBears\\BusinessBears.csproj",
+        "projectUniqueName": "C:\\Users\\Eid\\source\\repos\\sadiki-code\\BusinessBears.UI\\BusinessBears\\BusinessBears.csproj",
         "projectName": "BusinessBears",
-        "projectPath": "C:\\Users\\Eid\\source\\repos\\BusinessBears.UI\\BusinessBears\\BusinessBears.csproj",
+        "projectPath": "C:\\Users\\Eid\\source\\repos\\sadiki-code\\BusinessBears.UI\\BusinessBears\\BusinessBears.csproj",
         "packagesPath": "C:\\Users\\Eid\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Eid\\source\\repos\\BusinessBears.UI\\BusinessBears\\obj\\",
+        "outputPath": "C:\\Users\\Eid\\source\\repos\\sadiki-code\\BusinessBears.UI\\BusinessBears\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\ProgramData\\Xamarin\\NuGet\\",

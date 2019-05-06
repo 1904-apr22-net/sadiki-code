@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace BusinessBear.Library
+namespace BusinessBears.Library
 {
     /// <summary>
     /// A Customer object that records name, order history and default location

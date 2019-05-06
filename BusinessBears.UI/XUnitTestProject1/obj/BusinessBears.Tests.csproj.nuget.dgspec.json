@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Eid\\source\\repos\\BusinessBears.UI\\XUnitTestProject1\\BusinessBears.Tests.csproj": {}
+    "C:\\Users\\Eid\\source\\repos\\sadiki-code\\BusinessBears.UI\\XUnitTestProject1\\BusinessBears.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Eid\\source\\repos\\BusinessBears.UI\\BusinessBear.Library\\BusinessBear.Library.csproj": {
+    "C:\\Users\\Eid\\source\\repos\\sadiki-code\\BusinessBears.UI\\BusinessBear.Library\\BusinessBears.Library.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Eid\\source\\repos\\BusinessBears.UI\\BusinessBear.Library\\BusinessBear.Library.csproj",
-        "projectName": "BusinessBear.Library",
-        "projectPath": "C:\\Users\\Eid\\source\\repos\\BusinessBears.UI\\BusinessBear.Library\\BusinessBear.Library.csproj",
+        "projectUniqueName": "C:\\Users\\Eid\\source\\repos\\sadiki-code\\BusinessBears.UI\\BusinessBear.Library\\BusinessBears.Library.csproj",
+        "projectName": "BusinessBears.Library",
+        "projectPath": "C:\\Users\\Eid\\source\\repos\\sadiki-code\\BusinessBears.UI\\BusinessBear.Library\\BusinessBears.Library.csproj",
         "packagesPath": "C:\\Users\\Eid\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Eid\\source\\repos\\BusinessBears.UI\\BusinessBear.Library\\obj\\",
+        "outputPath": "C:\\Users\\Eid\\source\\repos\\sadiki-code\\BusinessBears.UI\\BusinessBear.Library\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\ProgramData\\Xamarin\\NuGet\\",
@@ -58,14 +58,14 @@
         }
       }
     },
-    "C:\\Users\\Eid\\source\\repos\\BusinessBears.UI\\XUnitTestProject1\\BusinessBears.Tests.csproj": {
+    "C:\\Users\\Eid\\source\\repos\\sadiki-code\\BusinessBears.UI\\XUnitTestProject1\\BusinessBears.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Eid\\source\\repos\\BusinessBears.UI\\XUnitTestProject1\\BusinessBears.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\Eid\\source\\repos\\sadiki-code\\BusinessBears.UI\\XUnitTestProject1\\BusinessBears.Tests.csproj",
         "projectName": "BusinessBears.Tests",
-        "projectPath": "C:\\Users\\Eid\\source\\repos\\BusinessBears.UI\\XUnitTestProject1\\BusinessBears.Tests.csproj",
+        "projectPath": "C:\\Users\\Eid\\source\\repos\\sadiki-code\\BusinessBears.UI\\XUnitTestProject1\\BusinessBears.Tests.csproj",
         "packagesPath": "C:\\Users\\Eid\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Eid\\source\\repos\\BusinessBears.UI\\XUnitTestProject1\\obj\\",
+        "outputPath": "C:\\Users\\Eid\\source\\repos\\sadiki-code\\BusinessBears.UI\\XUnitTestProject1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\ProgramData\\Xamarin\\NuGet\\",
@@ -86,8 +86,8 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "C:\\Users\\Eid\\source\\repos\\BusinessBears.UI\\BusinessBear.Library\\BusinessBear.Library.csproj": {
-                "projectPath": "C:\\Users\\Eid\\source\\repos\\BusinessBears.UI\\BusinessBear.Library\\BusinessBear.Library.csproj"
+              "C:\\Users\\Eid\\source\\repos\\sadiki-code\\BusinessBears.UI\\BusinessBear.Library\\BusinessBears.Library.csproj": {
+                "projectPath": "C:\\Users\\Eid\\source\\repos\\sadiki-code\\BusinessBears.UI\\BusinessBear.Library\\BusinessBears.Library.csproj"
               }
             }
           }
@@ -101,9 +101,13 @@
       "frameworks": {
         "netcoreapp2.1": {
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.2.4, )"
+            },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
-              "version": "[15.9.0, )"
+              "version": "[16.0.1, )"
             },
             "Microsoft.NETCore.App": {
               "target": "Package",
@@ -112,11 +116,13 @@
             },
             "xunit": {
               "target": "Package",
-              "version": "[2.4.0, )"
+              "version": "[2.4.1, )"
             },
             "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
-              "version": "[2.4.0, )"
+              "version": "[2.4.1, )"
             }
           },
           "imports": [

@@ -6,7 +6,18 @@ namespace AboNetDemo.Connected
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Stay Awake Stay Awake Stay Awake");
+
+
+            var connectionString = SecretConfiguration.ConnectionString;
+
+            using (var connection = new SqlConnection())
+            {
+                connection.Open();
+                using (var command = new SqlCommand())
+                {
+
+                }
+            }
         }
     }
 }

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace BusinessBear.Library
+namespace BusinessBears.Library
 {
     /// <summary>
     /// A location object that has an inventory and an order history. Also contains processing for orders
@@ -10,17 +10,19 @@ namespace BusinessBear.Library
     public class Location
     {
         int _location_id;
-        private Dictionary<string, int> inventory;
-        public Dictionary<string, int> Inventory { get => inventory; }
+        public int ID { get => _location_id; set => _location_id = value; }
+        private Dictionary<string, InventoryItem> inventory;
+        public Dictionary<string, InventoryItem> Inventory { get => inventory; }
         List<Order> orderHistory;
 
         /// <summary>
         /// AddProduct is used to stock the store with inventory
         /// </summary>
         /// <param name="item"></param>
-        public void AddProduct(Product item)
+        public void AddProduct(Product p, int i )
         {
-            inventory.Add(item.Name, item.Quantity);
+            InventoryItem item = new InventoryItem(p, i);
+            inventory.Add(item.Product.Name, item);
             Console.WriteLine("Item added to inventory");
         }
         /// <summary>
@@ -37,25 +39,29 @@ namespace BusinessBear.Library
                 {
                     if (inventory.ContainsKey(item2.Name))
                     {
-                        if (inventory[item2.Name] == 0)
+                        if (inventory[item2.Name].Quantity == 0)
                         {
                             upgradesQ = false;
                         }
                     }
+                    else
+                    {
+                        Console.WriteLine("This location does not stock this training module.");
+                    }
                 }
-            if (inventory["Bear"] - order.bears.Count < 0 || upgradesQ == false)
+            if (inventory["Bear"].Quantity - order.bears.Count < 0 || upgradesQ == false)
             {
-                Console.WriteLine("This location's inventory cannot satisfy this order");
+                Console.WriteLine("This location's inventory is too low to complete this order");
             }
             else
             {
                 double finalprice = 0;
                 foreach (Bear bear in order.bears)
                 {
-                    inventory["Bear"]--;
+                    inventory["Bear"].Quantity--;
                     foreach (var item in bear.upgrades)
                     {
-                        inventory[item.Name]--;
+                        inventory[item.Name].Quantity--;
                     }
                     finalprice += bear.getPrice();
                 }
@@ -69,8 +75,8 @@ namespace BusinessBear.Library
         }
         public Location()
         {
-            this.inventory = new Dictionary<string, int>();
-            inventory.Add("Bear", 0);
+            this.inventory = new Dictionary<string, InventoryItem>();
+            inventory.Add("Bear", new InventoryItem(new Bear(), 0));
             this.orderHistory = new List<Order> ();
         }
     }

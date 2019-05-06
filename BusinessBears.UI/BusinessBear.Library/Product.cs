@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace BusinessBear.Library
+namespace BusinessBears.Library
 {
 
 /// <summary>
@@ -14,8 +14,6 @@ namespace BusinessBear.Library
         public string Name { get => _name; set => _name = value; }
         public abstract double getPrice();
 
-        protected int _quantity;
-        public int Quantity { get => _quantity; set => _quantity = value; }
     }
     /// <summary>
     /// 
@@ -27,12 +25,6 @@ namespace BusinessBear.Library
             this._name = "Bear";
         }
 
-        public Bear(int q)
-        {
-            this._name = "Bear";
-            this._quantity = q;
-        }
-
         public Bear(HashSet<Training> t)
         {
             this._name = "Bear";
@@ -40,9 +32,6 @@ namespace BusinessBear.Library
         }
 
         protected readonly double _price = 199.99;
-        //string name;
-        //string furcolor;
-        //string quote;
         public HashSet<Training> upgrades;
         
         public void AddTraining(Training training)
@@ -87,12 +76,28 @@ namespace BusinessBear.Library
         {
             this._name = n;
             this._price = p;
-        }        
+        }      
+        
+
         
         public override double getPrice()
         {
             return this._price;
         }
 
+    }
+
+    public class InventoryItem
+    {
+        private Product product;
+        private int _quantity;
+        public int Quantity { get => _quantity; set => _quantity = value; }
+        public Product Product { get => product; }
+
+        public InventoryItem(Product p, int i)
+        {
+            this.product = p;
+            this._quantity = i;
+        }
     }
 }

@@ -186,11 +186,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Eid\\source\\repos\\BusinessBears.UI\\BusinessBear.Library\\BusinessBear.Library.csproj",
-      "projectName": "BusinessBear.Library",
-      "projectPath": "C:\\Users\\Eid\\source\\repos\\BusinessBears.UI\\BusinessBear.Library\\BusinessBear.Library.csproj",
+      "projectUniqueName": "C:\\Users\\Eid\\source\\repos\\sadiki-code\\BusinessBears.UI\\BusinessBear.Library\\BusinessBears.Library.csproj",
+      "projectName": "BusinessBears.Library",
+      "projectPath": "C:\\Users\\Eid\\source\\repos\\sadiki-code\\BusinessBears.UI\\BusinessBear.Library\\BusinessBears.Library.csproj",
       "packagesPath": "C:\\Users\\Eid\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Eid\\source\\repos\\BusinessBears.UI\\BusinessBear.Library\\obj\\",
+      "outputPath": "C:\\Users\\Eid\\source\\repos\\sadiki-code\\BusinessBears.UI\\BusinessBear.Library\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\ProgramData\\Xamarin\\NuGet\\",
