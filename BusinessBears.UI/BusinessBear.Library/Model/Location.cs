@@ -1,11 +1,12 @@
-﻿using System;
+﻿using BusinessBears.Library.Abstracts;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace BusinessBears.Library
 {
     /// <summary>
-    /// A location object that has an inventory and an order history. Also contains processing for orders
+    /// A location object that has an inventory and can contain an order history. Also contains processing for orders
     /// </summary>
     public class Location
     {
@@ -18,7 +19,9 @@ namespace BusinessBears.Library
         /// <summary>
         /// AddProduct is used to stock the store with inventory
         /// </summary>
-        /// <param name="item"></param>
+        /// <param name="p">A product. Location objects are typically spawned with a Bear product in inventory, so
+        /// this will largely be used for adding training moduls</param>
+        /// <param name="i">The initial quantity of the product that's being stockd.</param>
         public void AddProduct(Product p, int i )
         {
             InventoryItem item = new InventoryItem(p, i);
@@ -28,8 +31,8 @@ namespace BusinessBears.Library
         /// <summary>
         /// ProcessOrder handles functionality for placing orders
         /// </summary>
-        /// <param name="order"></param>
-        /// <returns></returns>
+        /// <param name="order">It takes an Order object. The Order's 'bear' collection must be populated beforehand</param>
+        /// <returns>The method returns an order with locationID attached for saving to DB</returns>
         public Order ProcessOrder(Order order)
         {
             bool upgradesQ = true;

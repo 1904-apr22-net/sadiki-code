@@ -16,7 +16,6 @@ namespace BusinessBears.Library
         public string Firstname { get => _firstname; set => _firstname = value; }
         public string Lastname { get => _lastname; set => _lastname = value; }
 
-        //Best to keep  
         int defLocation;
 
     }
