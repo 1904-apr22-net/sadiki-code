@@ -5,7 +5,7 @@ using Xunit;
 
 namespace BusinessBears.Tests
 {
-    public class LocationStocking
+    public class LocationTest
     {
         [Fact]
         public void StandardInput()
@@ -21,10 +21,9 @@ namespace BusinessBears.Tests
             Assert.Equal(9, testlocation.Inventory["Walnut Crushing"].Quantity);
 
         }
-    }
+    
 
-    public class OrderCreation
-    {
+ 
         [Fact]
         public void StandardOrder()
         {
@@ -41,10 +40,9 @@ namespace BusinessBears.Tests
             //function
 
         }
-    }
 
-    public class OrderProcessing
-    {
+
+
         [Fact]
         public void StandardOrderProcessing()
         {
@@ -61,10 +59,6 @@ namespace BusinessBears.Tests
 
             //function
             Order neworder = testlocation.ProcessOrder(order);
-
-            //assert
-
-
 
         }
     }

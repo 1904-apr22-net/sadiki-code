@@ -19,7 +19,7 @@ namespace BusinessBears
 
             BBearContext dbContext = CreateDbContext();
             bool running = true;
-            Console.WriteLine("Business Bears: We Sell Bears, Train Bears, And Nothing Else");
+            Console.WriteLine("Business Bears: We Sell Bears, Train Bears, And Nothing Else. NO GIRAFFES.");
             
             while (running)
             {
@@ -36,7 +36,6 @@ namespace BusinessBears
                     int cID=0;
                     while (customerhandling)
                     {
-                        //Add input validation
                         Console.WriteLine("Please input the first or last name of the customer");
                         string cname = Console.ReadLine();
                         List<Customer> lc = RetrieveCustomers(dbContext, cname);
@@ -161,22 +160,32 @@ namespace BusinessBears
 
                     currentOrder.CustomerID = cID;
 
-                   
+                    bool locationhandling = false;
+                    while (!locationhandling)
+                    {
+
+                        Console.WriteLine("Please input one of the following location IDs");
+                        PrintLocations(dbContext);
+                        int lID = Convert.ToInt32(Console.ReadLine());
 
 
-                    Console.WriteLine("Please input one of the following location IDs");
-                    PrintLocations(dbContext);
-                    int lID = Convert.ToInt32(Console.ReadLine());
 
-
-
-                    Location orderLocation = RetrieveLocation(dbContext, lID);
-                    currentOrder = orderLocation.ProcessOrder(currentOrder);
-                    AddOrder(dbContext, currentOrder);
-                    UpdateLocation(dbContext, currentOrder);
-                    UpdateCustomer(dbContext, currentOrder);
+                        Location orderLocation = RetrieveLocation(dbContext, lID);
+                        currentOrder = orderLocation.ProcessOrder(currentOrder);
+                        if (currentOrder.Price == null)
+                        {
+                            Console.WriteLine("Please try another location.");
+                        }
+                        else
+                        {
+                            AddOrder(dbContext, currentOrder);
+                            UpdateLocation(dbContext, currentOrder);
+                            UpdateCustomer(dbContext, currentOrder);
+                            locationhandling = !locationhandling;
+                        }
+                    }
                 }
-                if (input == "a")
+                else if (input == "a")
                 {
                     Console.WriteLine("r:\tView a location's order history.");
                     Console.WriteLine("a:\tView a customer's order history.");
@@ -240,9 +249,7 @@ namespace BusinessBears
                     }
                     
                 }
-               
-
-                if (input == "q")
+                else if (input == "q")
                 {
                     Console.WriteLine("Exiting Business Bears...");
                     running = false;
@@ -281,6 +288,7 @@ namespace BusinessBears
 
         private static void PrintOrdersByLocation(BBearContext dbContext, int location_id, string type)
         {
+           
             if (type == "time")
             {
                 foreach (Orders order in dbContext.Orders.Where(x => x.LocationId == location_id).Include(x => x.Customer)

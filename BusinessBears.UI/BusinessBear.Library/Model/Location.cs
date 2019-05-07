@@ -70,10 +70,12 @@ namespace BusinessBears.Library
                 }
                 Console.WriteLine("Order placed! The bear(s) will cost ${0}", finalprice);
                 order.Price = finalprice;
+
+                order.LocationID = this._location_id;
+                order.Ordertime = new DateTime();
+                this.orderHistory.Add(order);
+                
             }
-            order.LocationID = this._location_id;
-            order.Ordertime = new DateTime();
-            this.orderHistory.Add(order);
             return order;
         }
         public Location()

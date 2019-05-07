@@ -18,7 +18,13 @@ namespace BusinessBears.Library
 
         int defLocation;
         DateTime LastOrder;
-
+        /// <summary>
+        /// Takes in the current date and determines whether the difference between it and the
+        /// time of the last order are at least two hours apart
+        /// </summary>
+        /// <param name="d">A DateTime object, ideally the current date/time</param>
+        /// <returns>Returns bool. True if the input is at least two hours from the last order
+        /// and false if otherwise.</returns>
         public bool OrderLimit(DateTime d)
         {
             
@@ -31,7 +37,9 @@ namespace BusinessBears.Library
                 return true;
             }
         }
-
+        /// <summary>
+        /// A simple print function that returns the necessary details
+        /// </summary>
         public void CustomerDetails() {
             Console.WriteLine($"{this.Id}: {this.Firstname} {this.Lastname}");
         }
