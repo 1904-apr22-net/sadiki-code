@@ -26,7 +26,7 @@ namespace BusinessBears.Library
         {
             InventoryItem item = new InventoryItem(p, i);
             inventory.Add(item.Product.Name, item);
-            Console.WriteLine("Item added to inventory");
+            //Console.WriteLine("Item added to inventory");
         }
         /// <summary>
         /// ProcessOrder handles functionality for placing orders
@@ -69,8 +69,8 @@ namespace BusinessBears.Library
                     finalprice += bear.getPrice();
                 }
                 Console.WriteLine("Order placed! The bear(s) will cost ${0}", finalprice);
+                order.Price = finalprice;
             }
-
             order.LocationID = this._location_id;
             order.Ordertime = new DateTime();
             this.orderHistory.Add(order);

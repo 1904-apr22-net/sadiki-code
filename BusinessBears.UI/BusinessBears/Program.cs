@@ -19,7 +19,7 @@ namespace BusinessBears
 
             BBearContext dbContext = CreateDbContext();
             bool running = true;
-            Console.WriteLine("Business Bears: We Sell Bears & Train Bears");
+            Console.WriteLine("Business Bears: We Sell Bears, Train Bears, And Nothing Else");
             
             while (running)
             {
@@ -28,80 +28,144 @@ namespace BusinessBears
                 Console.WriteLine();
                 Console.WriteLine("r:\tCreate & process new order.");
                 Console.WriteLine("a:\tView order history.");
-                Console.WriteLine("l:\tLoad data from server.");
                 
                 var input = Console.ReadLine();
                 if (input == "r")
                 {
+                    bool customerhandling = true;
+                    int cID=0;
+                    while (customerhandling)
+                    {
+                        //Add input validation
+                        Console.WriteLine("Please input the first or last name of the customer");
+                        string cname = Console.ReadLine();
+                        List<Customer> lc = RetrieveCustomers(dbContext, cname);
+                        if (lc.Count() <= 0)
+                        {
+                            Console.WriteLine("No results for that name. Please try again.");
+                        }
+                        else {
+                            foreach (Customer customer in lc)
+                            {
+                                customer.CustomerDetails();
+                                
+                            }
+                            Console.WriteLine();
+                            Console.WriteLine("Please input the Customer ID from the provided list.");
+                            string s = Console.ReadLine();
+                            
+                            while (!Int32.TryParse(s, out cID) || lc.Count(x => x.Id.Equals(cID)) == 0)
+                            {
+                                Console.WriteLine("Input must be a number from the provided list");
 
-                    Console.WriteLine("Please input the first or last name of the customer");
-                    string cname = Console.ReadLine();
-                    PrintCustomers(dbContext, cname);
-                    Console.WriteLine();
-                    Console.WriteLine("Please input the Customer ID from the provided list.");
-                    int cID = Convert.ToInt32(Console.ReadLine());
-
+                                s = Console.ReadLine();
+                            }
+                            if (!lc.Single(x => x.Id == cID).OrderLimit(DateTime.Now))
+                            {
+                                Console.WriteLine("This customer has bought bears in the last two hours. Please wait or try another customer.");
+                            }
+                            else
+                            {
+                                customerhandling = !customerhandling;
+                            }
+                            
+                        }
+                    }
 
 
                     Console.WriteLine("How many bears will be required for this order?");
-                    int bearcountO = Convert.ToInt32(Console.ReadLine());
+                 
+                     
+                    string s2 = Console.ReadLine();
+                    int bearcountO;
+                    
+                    while (!Int32.TryParse(s2, out bearcountO) && bearcountO > 0)
+                    {
+                        Console.WriteLine("Not a valid number, try again.");
+
+                        s2 = Console.ReadLine();
+                    }
+
+                    
                     int counter = 0;
                     HashSet<Training> trainingArray = new HashSet<Training>();
                     List<Bear> bearList = new List<Bear>();
                     while (counter < bearcountO)
                     {
-                        Console.WriteLine($"Select the training needed for Bear #{0}. Insert 'f' when finished", counter + 1);
+                        Console.WriteLine($"Select the training modules needed for Bear #{counter + 1}. Insert 'f' when finished");
+                        Console.WriteLine("Note: Only one type of training per bear. Extra modules will be ignored.");
                         Console.WriteLine($"r:\t Juggling - $19.99");
                         Console.WriteLine($"a:\t Fighting - $24.99");
                         Console.WriteLine($"s:\t Tax Evasion - $45.99");
                         Console.WriteLine($"l:\t Marriage Counselling - $69.99");
                         Console.WriteLine($"t:\t Divininty - $199.99");
+                        Console.WriteLine($"p:\t C#/.Net  - $2.99");
 
                         string trainingSelect = Console.ReadLine();
                         if (trainingSelect == "r")
                         {
                             Training t = new Training("Juggling", 19.99);
+                            Console.WriteLine("Training module added!");
                             trainingArray.Add(t);
                         }
                         if (trainingSelect == "a")
                         {
                             Training t = new Training("Fighting", 24.99);
+                            Console.WriteLine("Training module added!");
                             trainingArray.Add(t);
                         }
                         if (trainingSelect == "s")
                         {
                             Training t = new Training("Tax Evasion", 45.99);
+                            Console.WriteLine("Training module added!");
                             trainingArray.Add(t);
                         }
                         if (trainingSelect == "l")
                         {
                             Training t = new Training("Marriage Counselling", 69.99);
+                            Console.WriteLine("Training module added!");
                             trainingArray.Add(t);
                         }
                         if (trainingSelect == "t")
                         {
                             Training t = new Training("Divinity", 199.99);
+                            Console.WriteLine("Training module added!");
+                            trainingArray.Add(t);
+                        }
+                        if (trainingSelect == "p")
+                        {
+                            Training t = new Training("C#/.Net", 2.99);
+                            Console.WriteLine("Training module added!");
                             trainingArray.Add(t);
                         }
                         if (trainingSelect == "f")
                         {
                             Bear bear = new Bear(trainingArray);
+                            Console.WriteLine($"Training assigned to Bear #{counter+1}");
                             bearList.Add(bear);
-                            trainingArray.Clear();
+                         
+                            trainingArray = new HashSet<Training>();
                             counter++;
+                     
                         }
                         else
                         {
                             Console.WriteLine("Please use one of the listed inputs");
                         }
+                        
                     }
+
                     Order currentOrder = new Order(bearList);
+                    int q = bearList[0].upgrades.Count();
+
+
                     currentOrder.CustomerID = cID;
 
                    
 
 
-                    Console.WriteLine("Please input a location ID");
+                    Console.WriteLine("Please input one of the following location IDs");
+                    PrintLocations(dbContext);
                     int lID = Convert.ToInt32(Console.ReadLine());
 
 
@@ -110,6 +174,7 @@ namespace BusinessBears
                     currentOrder = orderLocation.ProcessOrder(currentOrder);
                     AddOrder(dbContext, currentOrder);
                     UpdateLocation(dbContext, currentOrder);
+                    UpdateCustomer(dbContext, currentOrder);
                 }
                 if (input == "a")
                 {
@@ -120,7 +185,9 @@ namespace BusinessBears
                     {
                         Console.WriteLine("Please input the first or last name of the customer");
                         string cname = Console.ReadLine();
-                        PrintCustomers(dbContext, cname);
+                        foreach (Customer customer in RetrieveCustomers(dbContext, cname))
+                        {
+                        };
                         
                     }
                     Console.WriteLine("Input the target ID:");
@@ -132,7 +199,7 @@ namespace BusinessBears
                         Console.WriteLine("s:\tEarliest");
                         Console.WriteLine("t:\tLatest");
                         var inputL2 = Console.ReadLine();
-                    if (input == "r")
+                    if (inputL == "r")
                     {
                         if (inputL2 == "r")
                         {
@@ -191,15 +258,23 @@ namespace BusinessBears
             
         }
 
-        private static void PrintCustomers(BBearContext dbContext, string name)
+        private static List<Customer> RetrieveCustomers(BBearContext dbContext, string name)
         {
-            foreach (CustomerDB customer in dbContext.Customer.Where(x => x.FirstName == name).Include(x => x.Orders))
+            List<Customer> lc = new List<Customer>();
+            Console.WriteLine("Matching Customers:");
+            foreach (CustomerDB customer in dbContext.Customer.Where(x => x.FirstName == name || x.LastName == name).Include(x => x.Orders))
             {
-                Console.WriteLine($"{customer.CustomerId}: {customer.FirstName} {customer.LastName}");
+                Customer newcustomer = new Customer(customer.CustomerId, customer.FirstName, customer.LastName, customer.LastOrder);
+   
+                lc.Add(newcustomer);
             }
-            foreach (CustomerDB customer in dbContext.Customer.Where(x => x.LastName == name).Include(x => x.Orders))
+            return lc;
+        }
+        private static void PrintLocations(BBearContext dbContext)
+        {
+            foreach (LocationDB location in dbContext.Location)
             {
-                Console.WriteLine($"{customer.CustomerId}: {customer.FirstName} {customer.LastName}");
+                Console.WriteLine(location.LocationId);
             }
         }
 
@@ -208,28 +283,32 @@ namespace BusinessBears
         {
             if (type == "time")
             {
-                foreach (Orders order in dbContext.Orders.Where(x => x.LocationId == location_id).Include(x => x.Customer).OrderBy(x => x.CreatedAt))
+                foreach (Orders order in dbContext.Orders.Where(x => x.LocationId == location_id).Include(x => x.Customer)
+                    .Include(x => x.SoldBears).ThenInclude(y => y.SoldTraining).OrderBy(x => x.CreatedAt))
                 {
                     PrintOrders(order, dbContext);
                 }
             }
             else if (type == "time-r")
             {
-                foreach (Orders order in dbContext.Orders.Where(x => x.LocationId == location_id).Include(x => x.Customer).OrderBy(x => x.CreatedAt).Reverse())
+                foreach (Orders order in dbContext.Orders.Where(x => x.LocationId == location_id).Include(x => x.Customer)
+                    .Include(x=>x.SoldBears).ThenInclude(y=>y.SoldTraining).OrderByDescending(x => x.CreatedAt))
                 {
                     PrintOrders(order, dbContext);
                 }
             }
             else if (type == "price")
             {
-                foreach (Orders order in dbContext.Orders.Where(x => x.LocationId == location_id).Include(x => x.Customer).OrderBy(x => x.PriceTag))
+                foreach (Orders order in dbContext.Orders.Where(x => x.LocationId == location_id).Include(x => x.Customer)
+                    .Include(x => x.SoldBears).ThenInclude(y => y.SoldTraining).OrderBy(x => x.PriceTag))
                 {
                     PrintOrders(order, dbContext);
                 }
             }
             else if (type == "price-r")
             {
-                foreach (Orders order in dbContext.Orders.Where(x => x.LocationId == location_id).Include(x => x.Customer).OrderBy(x => x.PriceTag).Reverse())
+                foreach (Orders order in dbContext.Orders.Where(x => x.LocationId == location_id).Include(x => x.Customer)
+                    .Include(x => x.SoldBears).ThenInclude(y => y.SoldTraining).OrderByDescending(x => x.PriceTag))
                 {
                     PrintOrders(order, dbContext);
                 }
@@ -246,28 +325,32 @@ namespace BusinessBears
             
             if (type == "time")
             {
-                foreach (Orders order in dbContext.Orders.Where(x => x.CustomerId == customer_id).Include(x => x.Customer).OrderBy(x => x.CreatedAt))
+                foreach (Orders order in dbContext.Orders.Where(x => x.CustomerId == customer_id).Include(x => x.Customer)
+                    .Include(x => x.SoldBears).ThenInclude(y => y.SoldTraining).OrderBy(x => x.CreatedAt))
                 {
                     PrintOrders(order, dbContext);
                 }
             }
             else if (type == "time-r")
             {
-                foreach (Orders order in dbContext.Orders.Where(x => x.CustomerId == customer_id).Include(x => x.Customer).OrderBy(x => x.CreatedAt).Reverse())
+                foreach (Orders order in dbContext.Orders.Where(x => x.CustomerId == customer_id).Include(x => x.Customer)
+                    .Include(x => x.SoldBears).ThenInclude(y => y.SoldTraining).OrderByDescending(x => x.CreatedAt))
                 {
                     PrintOrders(order, dbContext);
                 }
             }
             else if (type == "price")
             {
-                foreach (Orders order in dbContext.Orders.Where(x => x.CustomerId == customer_id).Include(x => x.Customer).OrderBy(x => x.PriceTag))
+                foreach (Orders order in dbContext.Orders.Where(x => x.CustomerId == customer_id).Include(x => x.Customer)
+                    .Include(x => x.SoldBears).ThenInclude(y => y.SoldTraining).OrderBy(x => x.PriceTag))
                 {
                     PrintOrders(order, dbContext);
                 }
             }
             else if (type == "price-r")
             {
-                foreach (Orders order in dbContext.Orders.Where(x => x.CustomerId == customer_id).Include(x => x.Customer).OrderBy(x => x.PriceTag).Reverse())
+                foreach (Orders order in dbContext.Orders.Where(x => x.CustomerId == customer_id).Include(x => x.Customer)
+                    .Include(x => x.SoldBears).ThenInclude(y => y.SoldTraining).OrderByDescending(x => x.PriceTag))
                 {
                     PrintOrders(order, dbContext);
                 }
@@ -283,24 +366,26 @@ namespace BusinessBears
         {
             Console.WriteLine($"Customer {order.CustomerId}: {order.Customer.FirstName} {order.Customer.LastName}");
             Console.WriteLine($"Location: {order.LocationId}");
+            int bearcounter = 1;
             foreach (SoldBears bear in order.SoldBears)
             {
-                int bearcounter = 0;
+                
                 Console.WriteLine($"Bear #{bearcounter}:");
-                foreach (SoldTraining training in dbContext.SoldTraining.Where(x => x.BearId == bear.BearId).Include(x => x.Product))
+                foreach (SoldTraining training in dbContext.SoldTraining.Include(x => x.Product).Where(x => x.BearId == bear.BearId))
+                //foreach (SoldTraining training in bear.SoldTraining)
                 {
                     Console.WriteLine(training.Product.ProductName);
                 }
 
-
+                bearcounter++;
             }
-            Console.WriteLine($"Price Paid: ${order.PriceTag})");
+            Console.WriteLine($"Price Paid: ${order.PriceTag}");
 
         }
 
         private static Location RetrieveLocation(BBearContext dbContext, int location_id)
         {
-            LocationDB location = dbContext.Location.Find(location_id);
+            LocationDB location = dbContext.Location.Include(x => x.Inventory).ThenInclude(y => y.Product).SingleOrDefault(x => x.LocationId == location_id);
             Location newlocation = new Location();
             newlocation.ID = location_id;
             newlocation.Inventory["Bear"].Quantity = location.Inventory.Where(x => x.Product.ProductName == "Bear").First().Quantity;
@@ -338,6 +423,7 @@ namespace BusinessBears
                         dbContext.Location.Find(order.LocationID).Inventory.Where(x => x.Product.ProductName == t.Name).First().Quantity++;
                     }
                 }
+                
                 Console.WriteLine(ex.Message);
             }
         }
@@ -349,7 +435,7 @@ namespace BusinessBears
             newOrders.PriceTag = Convert.ToDecimal(order.Price);
             newOrders.LocationId = order.LocationID;
             newOrders.CustomerId = order.CustomerID;
-            newOrders.CreatedAt = new DateTime();
+            newOrders.CreatedAt = DateTime.Now;
             foreach (Bear bear in order.bears)
             {
                 SoldBears b = new SoldBears();
@@ -365,7 +451,7 @@ namespace BusinessBears
                 b.SoldTraining = hst;
                 newOrders.SoldBears.Add(b);
             }
-            
+
 
 
             dbContext.Add(newOrders);
@@ -377,6 +463,23 @@ namespace BusinessBears
             catch (DbUpdateException ex)
             {
                 dbContext.Orders.Remove(newOrders);
+                Console.WriteLine(ex.Message);
+            }
+        }
+
+        private static void UpdateCustomer (BBearContext dbContext, Order order)
+        {
+            dbContext.Customer.Find(order.CustomerID).DefLocationId = order.LocationID;
+            dbContext.Customer.Find(order.CustomerID).LastOrder = DateTime.Now;
+
+            try
+            {
+                dbContext.SaveChanges();
+            }
+            catch (DbUpdateException ex)
+            {
+                dbContext.Customer.Find(order.CustomerID).DefLocationId = null;
+                dbContext.Customer.Find(order.CustomerID).LastOrder = null;
                 Console.WriteLine(ex.Message);
             }
         }
